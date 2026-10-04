@@ -41,6 +41,9 @@ for (const file of (await filesAt(root)).filter(file => file.endsWith('.html')))
     checked++;
   }
 }
+const normalizedRoutes = config.routes.map(route => route.route.replace(/\/+$/, '') || '/');
+assert.equal(new Set(normalizedRoutes).size, normalizedRoutes.length, 'Azure treats trailing-slash variants as duplicate routes');
 for (const route of config.routes) await resolveURL(route.route);
+for (const url of ['/gachatime/privacy/', '/gachatime/terms/']) await resolveURL(url);
 assert.equal(config.navigationFallback, undefined, 'Missing pages should return 404, not the homepage');
 console.log(`Site checks passed: ${checked} local references and ${config.routes.length} Azure route mappings.`);

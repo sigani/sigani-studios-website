@@ -1,9 +1,7 @@
 {
   "routes": [
     { "route": "/gachatime/privacy", "rewrite": "/gachatime/privacy/index.html" },
-    { "route": "/gachatime/privacy/", "rewrite": "/gachatime/privacy/index.html" },
-    { "route": "/gachatime/terms", "rewrite": "/gachatime/terms/index.html" },
-    { "route": "/gachatime/terms/", "rewrite": "/gachatime/terms/index.html" }
+    { "route": "/gachatime/terms", "rewrite": "/gachatime/terms/index.html" }
   ],
   "responseOverrides": {
     "404": { "rewrite": "/404.html" }
