@@ -1,0 +1,12 @@
+{
+  "name": "sigani-studios",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free portfolio for Azure Static Web Apps",
+  "scripts": {
+    "dev": "node scripts/preview.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
