@@ -101,21 +101,20 @@ Both must return their own document over HTTPS without login. Trailing-slash
 variants are also mapped. Missing URLs show a real 404 page, rather than
 silently displaying the homepage. Once the policies are finalized and publicly
 available, paste these exact URLs into the corresponding RevenueCat fields.
-Do not submit the current draft policies as final production documents.
+The pages contain the Canada-launch policies; verify that the released app's
+data practices match them before submitting a production release.
 
-## Finish content before launch
+## Launch readiness
 
-The GachaTime descriptions and policy drafts were based on the local app's
-README, purchase adapter, and legal launch checklist on October 3, 2026. They
-reflect the current development state, not planned production features.
+The policies were updated on October 3, 2026 for Jaren operating as Sigani
+Studios, using `jaren@siganistudios.com`, a Canada launch, and a recommended 13+
+audience. Accounts, leaderboard, and ads are addressed with development versus
+available features distinguished. Production purchases are not offered.
+See [LAUNCH-NOTES.md](LAUNCH-NOTES.md) for app-side work still required.
 
-- Supply the publisher's legal name and working support/privacy email.
-- Confirm target audience, launch regions, and appropriate final terms.
-- Confirm the production data flows, Google consent configuration, billing
-  model, online providers, leaderboard retention, and deletion process.
-- Resolve the `draft-notice` and pending sections in **both** policy files;
-  replace the draft date with the actual effective date. Remove their `noindex`
-  meta tags if you want finalized policies indexed.
+- Match the production data flows, Google consent configuration, audience,
+  online providers, retention, and deletion process to the policies.
+- Update both policies before changing billing, audience, or data practices.
 - Replace the LinkedIn feed link with your public profile URL in
   `public/index.html`. The current link is explicitly labeled as a feed link.
 - Expand the Quote Order summary once its repository has content. Its supplied
@@ -133,8 +132,8 @@ reflect the current development state, not planned production features.
 | `public/index.html` | Portfolio and project descriptions |
 | `public/assets/site.css` | Shared responsive orange theme |
 | `public/assets/site.js` | Footer year |
-| `public/gachatime/privacy/index.html` | Privacy policy draft |
-| `public/gachatime/terms/index.html` | Terms draft |
+| `public/gachatime/privacy/index.html` | Privacy policy |
+| `public/gachatime/terms/index.html` | Terms of use |
 | `public/staticwebapp.config.json` | Azure routing, headers, and 404 handling |
 | `scripts/preview.mjs` | Local static preview server |
 | `scripts/check.mjs` | Local references, anchors, and route checks |
