@@ -115,8 +115,8 @@ See [LAUNCH-NOTES.md](LAUNCH-NOTES.md) for app-side work still required.
 - Match the production data flows, Google consent configuration, audience,
   online providers, retention, and deletion process to the policies.
 - Update both policies before changing billing, audience, or data practices.
-- Replace the LinkedIn feed link with your public profile URL in
-  `public/index.html`. The current link is explicitly labeled as a feed link.
+- The contact section links to
+  [Jaren’s LinkedIn profile](https://www.linkedin.com/in/jaren-agujo/).
 - Expand the Quote Order summary once its repository has content. Its supplied
   [repository](https://github.com/sigani/quote-order-system-demo) is retained here
   for reference. Replace the homepage's “View demo site / Coming soon” label
